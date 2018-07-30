@@ -1,0 +1,5768 @@
+{
+  "package": null,
+  "options": {
+    "java_package": "com.satoshilabs.trezor.lib.protobuf",
+    "java_outer_classname": "TrezorMessage",
+    "java_multiple_files": false,
+    "java_generate_equals_and_hash": false,
+    "optimize_for": 1,
+    "go_package": null,
+    "cc_generic_services": false,
+    "java_generic_services": false,
+    "py_generic_services": false,
+    "uninterpreted_option": {}
+  },
+  "services": [],
+  "messages": [
+    {
+      "enums": [],
+      "name": "Initialize",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "state",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "bool",
+          "name": "skip_passphrase",
+          "options": {},
+          "id": 2
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "GetFeatures",
+      "options": {},
+      "messages": [],
+      "fields": [],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "Features",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "string",
+          "name": "vendor",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "major_version",
+          "options": {},
+          "id": 2
+        },
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "minor_version",
+          "options": {},
+          "id": 3
+        },
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "patch_version",
+          "options": {},
+          "id": 4
+        },
+        {
+          "rule": "optional",
+          "type": "bool",
+          "name": "bootloader_mode",
+          "options": {},
+          "id": 5
+        },
+        {
+          "rule": "optional",
+          "type": "string",
+          "name": "device_id",
+          "options": {},
+          "id": 6
+        },
+        {
+          "rule": "optional",
+          "type": "bool",
+          "name": "pin_protection",
+          "options": {},
+          "id": 7
+        },
+        {
+          "rule": "optional",
+          "type": "bool",
+          "name": "passphrase_protection",
+          "options": {},
+          "id": 8
+        },
+        {
+          "rule": "optional",
+          "type": "string",
+          "name": "language",
+          "options": {},
+          "id": 9
+        },
+        {
+          "rule": "optional",
+          "type": "string",
+          "name": "label",
+          "options": {},
+          "id": 10
+        },
+        {
+          "rule": "optional",
+          "type": "bool",
+          "name": "initialized",
+          "options": {},
+          "id": 12
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "revision",
+          "options": {},
+          "id": 13
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "bootloader_hash",
+          "options": {},
+          "id": 14
+        },
+        {
+          "rule": "optional",
+          "type": "bool",
+          "name": "imported",
+          "options": {},
+          "id": 15
+        },
+        {
+          "rule": "optional",
+          "type": "bool",
+          "name": "pin_cached",
+          "options": {},
+          "id": 16
+        },
+        {
+          "rule": "optional",
+          "type": "bool",
+          "name": "passphrase_cached",
+          "options": {},
+          "id": 17
+        },
+        {
+          "rule": "optional",
+          "type": "bool",
+          "name": "firmware_present",
+          "options": {},
+          "id": 18
+        },
+        {
+          "rule": "optional",
+          "type": "bool",
+          "name": "needs_backup",
+          "options": {},
+          "id": 19
+        },
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "flags",
+          "options": {},
+          "id": 20
+        },
+        {
+          "rule": "optional",
+          "type": "string",
+          "name": "model",
+          "options": {},
+          "id": 21
+        },
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "fw_major",
+          "options": {},
+          "id": 22
+        },
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "fw_minor",
+          "options": {},
+          "id": 23
+        },
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "fw_patch",
+          "options": {},
+          "id": 24
+        },
+        {
+          "rule": "optional",
+          "type": "string",
+          "name": "fw_vendor",
+          "options": {},
+          "id": 25
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "fw_vendor_keys",
+          "options": {},
+          "id": 26
+        },
+        {
+          "rule": "optional",
+          "type": "bool",
+          "name": "unfinished_backup",
+          "options": {},
+          "id": 27
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "ClearSession",
+      "options": {},
+      "messages": [],
+      "fields": [],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "ApplySettings",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "string",
+          "name": "language",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "string",
+          "name": "label",
+          "options": {},
+          "id": 2
+        },
+        {
+          "rule": "optional",
+          "type": "bool",
+          "name": "use_passphrase",
+          "options": {},
+          "id": 3
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "homescreen",
+          "options": {},
+          "id": 4
+        },
+        {
+          "rule": "optional",
+          "type": "PassphraseSourceType",
+          "name": "passphrase_source",
+          "options": {},
+          "id": 5
+        },
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "auto_lock_delay_ms",
+          "options": {},
+          "id": 6
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "ApplyFlags",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "flags",
+          "options": {},
+          "id": 1
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "ChangePin",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "bool",
+          "name": "remove",
+          "options": {},
+          "id": 1
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "Ping",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "string",
+          "name": "message",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "bool",
+          "name": "button_protection",
+          "options": {},
+          "id": 2
+        },
+        {
+          "rule": "optional",
+          "type": "bool",
+          "name": "pin_protection",
+          "options": {},
+          "id": 3
+        },
+        {
+          "rule": "optional",
+          "type": "bool",
+          "name": "passphrase_protection",
+          "options": {},
+          "id": 4
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "Success",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "string",
+          "name": "message",
+          "options": {},
+          "id": 1
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "Failure",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "FailureType",
+          "name": "code",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "string",
+          "name": "message",
+          "options": {},
+          "id": 2
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "ButtonRequest",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "ButtonRequestType",
+          "name": "code",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "string",
+          "name": "data",
+          "options": {},
+          "id": 2
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "ButtonAck",
+      "options": {},
+      "messages": [],
+      "fields": [],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "PinMatrixRequest",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "PinMatrixRequestType",
+          "name": "type",
+          "options": {},
+          "id": 1
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "PinMatrixAck",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "required",
+          "type": "string",
+          "name": "pin",
+          "options": {},
+          "id": 1
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "Cancel",
+      "options": {},
+      "messages": [],
+      "fields": [],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "PassphraseRequest",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "bool",
+          "name": "on_device",
+          "options": {},
+          "id": 1
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "PassphraseAck",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "string",
+          "name": "passphrase",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "state",
+          "options": {},
+          "id": 2
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "PassphraseStateRequest",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "state",
+          "options": {},
+          "id": 1
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "PassphraseStateAck",
+      "options": {},
+      "messages": [],
+      "fields": [],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "GetEntropy",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "required",
+          "type": "uint32",
+          "name": "size",
+          "options": {},
+          "id": 1
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "Entropy",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "required",
+          "type": "bytes",
+          "name": "entropy",
+          "options": {},
+          "id": 1
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "GetPublicKey",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "repeated",
+          "type": "uint32",
+          "name": "address_n",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "string",
+          "name": "ecdsa_curve_name",
+          "options": {},
+          "id": 2
+        },
+        {
+          "rule": "optional",
+          "type": "bool",
+          "name": "show_display",
+          "options": {},
+          "id": 3
+        },
+        {
+          "rule": "optional",
+          "type": "string",
+          "name": "coin_name",
+          "options": {},
+          "id": 4
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "PublicKey",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "required",
+          "type": "HDNodeType",
+          "name": "node",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "string",
+          "name": "xpub",
+          "options": {},
+          "id": 2
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "GetAddress",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "repeated",
+          "type": "uint32",
+          "name": "address_n",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "string",
+          "name": "coin_name",
+          "options": {},
+          "id": 2
+        },
+        {
+          "rule": "optional",
+          "type": "bool",
+          "name": "show_display",
+          "options": {},
+          "id": 3
+        },
+        {
+          "rule": "optional",
+          "type": "MultisigRedeemScriptType",
+          "name": "multisig",
+          "options": {},
+          "id": 4
+        },
+        {
+          "rule": "optional",
+          "type": "InputScriptType",
+          "name": "script_type",
+          "options": {},
+          "id": 5
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "EthereumGetAddress",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "repeated",
+          "type": "uint32",
+          "name": "address_n",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "bool",
+          "name": "show_display",
+          "options": {},
+          "id": 2
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "Address",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "required",
+          "type": "string",
+          "name": "address",
+          "options": {},
+          "id": 1
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "EthereumAddress",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "required",
+          "type": "bytes",
+          "name": "address",
+          "options": {},
+          "id": 1
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "WipeDevice",
+      "options": {},
+      "messages": [],
+      "fields": [],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "LoadDevice",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "string",
+          "name": "mnemonic",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "HDNodeType",
+          "name": "node",
+          "options": {},
+          "id": 2
+        },
+        {
+          "rule": "optional",
+          "type": "string",
+          "name": "pin",
+          "options": {},
+          "id": 3
+        },
+        {
+          "rule": "optional",
+          "type": "bool",
+          "name": "passphrase_protection",
+          "options": {},
+          "id": 4
+        },
+        {
+          "rule": "optional",
+          "type": "string",
+          "name": "language",
+          "options": {},
+          "id": 5
+        },
+        {
+          "rule": "optional",
+          "type": "string",
+          "name": "label",
+          "options": {},
+          "id": 6
+        },
+        {
+          "rule": "optional",
+          "type": "bool",
+          "name": "skip_checksum",
+          "options": {},
+          "id": 7
+        },
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "u2f_counter",
+          "options": {},
+          "id": 8
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "ResetDevice",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "bool",
+          "name": "display_random",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "strength",
+          "options": {},
+          "id": 2
+        },
+        {
+          "rule": "optional",
+          "type": "bool",
+          "name": "passphrase_protection",
+          "options": {},
+          "id": 3
+        },
+        {
+          "rule": "optional",
+          "type": "bool",
+          "name": "pin_protection",
+          "options": {},
+          "id": 4
+        },
+        {
+          "rule": "optional",
+          "type": "string",
+          "name": "language",
+          "options": {},
+          "id": 5
+        },
+        {
+          "rule": "optional",
+          "type": "string",
+          "name": "label",
+          "options": {},
+          "id": 6
+        },
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "u2f_counter",
+          "options": {},
+          "id": 7
+        },
+        {
+          "rule": "optional",
+          "type": "bool",
+          "name": "skip_backup",
+          "options": {},
+          "id": 8
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "BackupDevice",
+      "options": {},
+      "messages": [],
+      "fields": [],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "EntropyRequest",
+      "options": {},
+      "messages": [],
+      "fields": [],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "EntropyAck",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "entropy",
+          "options": {},
+          "id": 1
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "RecoveryDevice",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "word_count",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "bool",
+          "name": "passphrase_protection",
+          "options": {},
+          "id": 2
+        },
+        {
+          "rule": "optional",
+          "type": "bool",
+          "name": "pin_protection",
+          "options": {},
+          "id": 3
+        },
+        {
+          "rule": "optional",
+          "type": "string",
+          "name": "language",
+          "options": {},
+          "id": 4
+        },
+        {
+          "rule": "optional",
+          "type": "string",
+          "name": "label",
+          "options": {},
+          "id": 5
+        },
+        {
+          "rule": "optional",
+          "type": "bool",
+          "name": "enforce_wordlist",
+          "options": {},
+          "id": 6
+        },
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "type",
+          "options": {},
+          "id": 8
+        },
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "u2f_counter",
+          "options": {},
+          "id": 9
+        },
+        {
+          "rule": "optional",
+          "type": "bool",
+          "name": "dry_run",
+          "options": {},
+          "id": 10
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "WordRequest",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "WordRequestType",
+          "name": "type",
+          "options": {},
+          "id": 1
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "WordAck",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "required",
+          "type": "string",
+          "name": "word",
+          "options": {},
+          "id": 1
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "SignMessage",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "repeated",
+          "type": "uint32",
+          "name": "address_n",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "required",
+          "type": "bytes",
+          "name": "message",
+          "options": {},
+          "id": 2
+        },
+        {
+          "rule": "optional",
+          "type": "string",
+          "name": "coin_name",
+          "options": {},
+          "id": 3
+        },
+        {
+          "rule": "optional",
+          "type": "InputScriptType",
+          "name": "script_type",
+          "options": {},
+          "id": 4
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "VerifyMessage",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "string",
+          "name": "address",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "signature",
+          "options": {},
+          "id": 2
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "message",
+          "options": {},
+          "id": 3
+        },
+        {
+          "rule": "optional",
+          "type": "string",
+          "name": "coin_name",
+          "options": {},
+          "id": 4
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "MessageSignature",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "string",
+          "name": "address",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "signature",
+          "options": {},
+          "id": 2
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "EncryptMessage",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "pubkey",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "message",
+          "options": {},
+          "id": 2
+        },
+        {
+          "rule": "optional",
+          "type": "bool",
+          "name": "display_only",
+          "options": {},
+          "id": 3
+        },
+        {
+          "rule": "repeated",
+          "type": "uint32",
+          "name": "address_n",
+          "options": {},
+          "id": 4
+        },
+        {
+          "rule": "optional",
+          "type": "string",
+          "name": "coin_name",
+          "options": {},
+          "id": 5
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "EncryptedMessage",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "nonce",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "message",
+          "options": {},
+          "id": 2
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "hmac",
+          "options": {},
+          "id": 3
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "DecryptMessage",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "repeated",
+          "type": "uint32",
+          "name": "address_n",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "nonce",
+          "options": {},
+          "id": 2
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "message",
+          "options": {},
+          "id": 3
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "hmac",
+          "options": {},
+          "id": 4
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "DecryptedMessage",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "message",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "string",
+          "name": "address",
+          "options": {},
+          "id": 2
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "CipherKeyValue",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "repeated",
+          "type": "uint32",
+          "name": "address_n",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "string",
+          "name": "key",
+          "options": {},
+          "id": 2
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "value",
+          "options": {},
+          "id": 3
+        },
+        {
+          "rule": "optional",
+          "type": "bool",
+          "name": "encrypt",
+          "options": {},
+          "id": 4
+        },
+        {
+          "rule": "optional",
+          "type": "bool",
+          "name": "ask_on_encrypt",
+          "options": {},
+          "id": 5
+        },
+        {
+          "rule": "optional",
+          "type": "bool",
+          "name": "ask_on_decrypt",
+          "options": {},
+          "id": 6
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "iv",
+          "options": {},
+          "id": 7
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "CipheredKeyValue",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "value",
+          "options": {},
+          "id": 1
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "EstimateTxSize",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "required",
+          "type": "uint32",
+          "name": "outputs_count",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "required",
+          "type": "uint32",
+          "name": "inputs_count",
+          "options": {},
+          "id": 2
+        },
+        {
+          "rule": "optional",
+          "type": "string",
+          "name": "coin_name",
+          "options": {},
+          "id": 3
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "TxSize",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "tx_size",
+          "options": {},
+          "id": 1
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "SignTx",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "required",
+          "type": "uint32",
+          "name": "outputs_count",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "required",
+          "type": "uint32",
+          "name": "inputs_count",
+          "options": {},
+          "id": 2
+        },
+        {
+          "rule": "optional",
+          "type": "string",
+          "name": "coin_name",
+          "options": {},
+          "id": 3
+        },
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "version",
+          "options": {},
+          "id": 4
+        },
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "lock_time",
+          "options": {},
+          "id": 5
+        },
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "expiry",
+          "options": {},
+          "id": 6
+        },
+        {
+          "rule": "optional",
+          "type": "bool",
+          "name": "overwintered",
+          "options": {},
+          "id": 7
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "SimpleSignTx",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "repeated",
+          "type": "TxInputType",
+          "name": "inputs",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "repeated",
+          "type": "TxOutputType",
+          "name": "outputs",
+          "options": {},
+          "id": 2
+        },
+        {
+          "rule": "repeated",
+          "type": "TransactionType",
+          "name": "transactions",
+          "options": {},
+          "id": 3
+        },
+        {
+          "rule": "optional",
+          "type": "string",
+          "name": "coin_name",
+          "options": {},
+          "id": 4
+        },
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "version",
+          "options": {},
+          "id": 5
+        },
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "lock_time",
+          "options": {},
+          "id": 6
+        },
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "expiry",
+          "options": {},
+          "id": 7
+        },
+        {
+          "rule": "optional",
+          "type": "bool",
+          "name": "overwintered",
+          "options": {},
+          "id": 8
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "TxRequest",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "RequestType",
+          "name": "request_type",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "TxRequestDetailsType",
+          "name": "details",
+          "options": {},
+          "id": 2
+        },
+        {
+          "rule": "optional",
+          "type": "TxRequestSerializedType",
+          "name": "serialized",
+          "options": {},
+          "id": 3
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "TxAck",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "TransactionType",
+          "name": "tx",
+          "options": {},
+          "id": 1
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "EthereumSignTx",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "repeated",
+          "type": "uint32",
+          "name": "address_n",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "nonce",
+          "options": {},
+          "id": 2
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "gas_price",
+          "options": {},
+          "id": 3
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "gas_limit",
+          "options": {},
+          "id": 4
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "to",
+          "options": {},
+          "id": 5
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "value",
+          "options": {},
+          "id": 6
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "data_initial_chunk",
+          "options": {},
+          "id": 7
+        },
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "data_length",
+          "options": {},
+          "id": 8
+        },
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "chain_id",
+          "options": {},
+          "id": 9
+        },
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "tx_type",
+          "options": {},
+          "id": 10
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "EthereumTxRequest",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "data_length",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "signature_v",
+          "options": {},
+          "id": 2
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "signature_r",
+          "options": {},
+          "id": 3
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "signature_s",
+          "options": {},
+          "id": 4
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "EthereumTxAck",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "data_chunk",
+          "options": {},
+          "id": 1
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "EthereumSignMessage",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "repeated",
+          "type": "uint32",
+          "name": "address_n",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "required",
+          "type": "bytes",
+          "name": "message",
+          "options": {},
+          "id": 2
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "EthereumVerifyMessage",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "address",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "signature",
+          "options": {},
+          "id": 2
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "message",
+          "options": {},
+          "id": 3
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "EthereumMessageSignature",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "address",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "signature",
+          "options": {},
+          "id": 2
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "SignIdentity",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "IdentityType",
+          "name": "identity",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "challenge_hidden",
+          "options": {},
+          "id": 2
+        },
+        {
+          "rule": "optional",
+          "type": "string",
+          "name": "challenge_visual",
+          "options": {},
+          "id": 3
+        },
+        {
+          "rule": "optional",
+          "type": "string",
+          "name": "ecdsa_curve_name",
+          "options": {},
+          "id": 4
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "SignedIdentity",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "string",
+          "name": "address",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "public_key",
+          "options": {},
+          "id": 2
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "signature",
+          "options": {},
+          "id": 3
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "GetECDHSessionKey",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "IdentityType",
+          "name": "identity",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "peer_public_key",
+          "options": {},
+          "id": 2
+        },
+        {
+          "rule": "optional",
+          "type": "string",
+          "name": "ecdsa_curve_name",
+          "options": {},
+          "id": 3
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "ECDHSessionKey",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "session_key",
+          "options": {},
+          "id": 1
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "SetU2FCounter",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "u2f_counter",
+          "options": {},
+          "id": 1
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "FirmwareErase",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "length",
+          "options": {},
+          "id": 1
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "FirmwareRequest",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "offset",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "length",
+          "options": {},
+          "id": 2
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "FirmwareUpload",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "required",
+          "type": "bytes",
+          "name": "payload",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "hash",
+          "options": {},
+          "id": 2
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "SelfTest",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "payload",
+          "options": {},
+          "id": 1
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "NEMGetAddress",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "repeated",
+          "type": "uint32",
+          "name": "address_n",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "network",
+          "options": {},
+          "id": 2
+        },
+        {
+          "rule": "optional",
+          "type": "bool",
+          "name": "show_display",
+          "options": {},
+          "id": 3
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "NEMAddress",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "required",
+          "type": "string",
+          "name": "address",
+          "options": {},
+          "id": 1
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "NEMSignTx",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "NEMTransactionCommon",
+          "name": "transaction",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "NEMTransactionCommon",
+          "name": "multisig",
+          "options": {},
+          "id": 2
+        },
+        {
+          "rule": "optional",
+          "type": "NEMTransfer",
+          "name": "transfer",
+          "options": {},
+          "id": 3
+        },
+        {
+          "rule": "optional",
+          "type": "bool",
+          "name": "cosigning",
+          "options": {},
+          "id": 4
+        },
+        {
+          "rule": "optional",
+          "type": "NEMProvisionNamespace",
+          "name": "provision_namespace",
+          "options": {},
+          "id": 5
+        },
+        {
+          "rule": "optional",
+          "type": "NEMMosaicCreation",
+          "name": "mosaic_creation",
+          "options": {},
+          "id": 6
+        },
+        {
+          "rule": "optional",
+          "type": "NEMMosaicSupplyChange",
+          "name": "supply_change",
+          "options": {},
+          "id": 7
+        },
+        {
+          "rule": "optional",
+          "type": "NEMAggregateModification",
+          "name": "aggregate_modification",
+          "options": {},
+          "id": 8
+        },
+        {
+          "rule": "optional",
+          "type": "NEMImportanceTransfer",
+          "name": "importance_transfer",
+          "options": {},
+          "id": 9
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "NEMSignedTx",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "data",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "signature",
+          "options": {},
+          "id": 2
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "NEMDecryptMessage",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "repeated",
+          "type": "uint32",
+          "name": "address_n",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "network",
+          "options": {},
+          "id": 2
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "public_key",
+          "options": {},
+          "id": 3
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "payload",
+          "options": {},
+          "id": 4
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "NEMDecryptedMessage",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "payload",
+          "options": {},
+          "id": 1
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "CosiCommit",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "repeated",
+          "type": "uint32",
+          "name": "address_n",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "data",
+          "options": {},
+          "id": 2
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "CosiCommitment",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "commitment",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "pubkey",
+          "options": {},
+          "id": 2
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "CosiSign",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "repeated",
+          "type": "uint32",
+          "name": "address_n",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "data",
+          "options": {},
+          "id": 2
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "global_commitment",
+          "options": {},
+          "id": 3
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "global_pubkey",
+          "options": {},
+          "id": 4
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "CosiSignature",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "signature",
+          "options": {},
+          "id": 1
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "StellarGetPublicKey",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "repeated",
+          "type": "uint32",
+          "name": "address_n",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "bool",
+          "name": "show_display",
+          "options": {},
+          "id": 2
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "StellarPublicKey",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "public_key",
+          "options": {},
+          "id": 1
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "StellarGetAddress",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "repeated",
+          "type": "uint32",
+          "name": "address_n",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "bool",
+          "name": "show_display",
+          "options": {},
+          "id": 2
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "StellarAddress",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "string",
+          "name": "address",
+          "options": {},
+          "id": 1
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "StellarSignTx",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "protocol_version",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "repeated",
+          "type": "uint32",
+          "name": "address_n",
+          "options": {},
+          "id": 2
+        },
+        {
+          "rule": "optional",
+          "type": "string",
+          "name": "network_passphrase",
+          "options": {},
+          "id": 3
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "source_account",
+          "options": {},
+          "id": 4
+        },
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "fee",
+          "options": {},
+          "id": 5
+        },
+        {
+          "rule": "optional",
+          "type": "uint64",
+          "name": "sequence_number",
+          "options": {},
+          "id": 6
+        },
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "timebounds_start",
+          "options": {},
+          "id": 8
+        },
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "timebounds_end",
+          "options": {},
+          "id": 9
+        },
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "memo_type",
+          "options": {},
+          "id": 10
+        },
+        {
+          "rule": "optional",
+          "type": "string",
+          "name": "memo_text",
+          "options": {},
+          "id": 11
+        },
+        {
+          "rule": "optional",
+          "type": "uint64",
+          "name": "memo_id",
+          "options": {},
+          "id": 12
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "memo_hash",
+          "options": {},
+          "id": 13
+        },
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "num_operations",
+          "options": {},
+          "id": 14
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "StellarTxOpRequest",
+      "options": {},
+      "messages": [],
+      "fields": [],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "StellarPaymentOp",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "source_account",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "destination_account",
+          "options": {},
+          "id": 2
+        },
+        {
+          "rule": "optional",
+          "type": "StellarAssetType",
+          "name": "asset",
+          "options": {},
+          "id": 3
+        },
+        {
+          "rule": "optional",
+          "type": "sint64",
+          "name": "amount",
+          "options": {},
+          "id": 4
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "StellarCreateAccountOp",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "source_account",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "new_account",
+          "options": {},
+          "id": 2
+        },
+        {
+          "rule": "optional",
+          "type": "sint64",
+          "name": "starting_balance",
+          "options": {},
+          "id": 3
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "StellarPathPaymentOp",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "source_account",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "StellarAssetType",
+          "name": "send_asset",
+          "options": {},
+          "id": 2
+        },
+        {
+          "rule": "optional",
+          "type": "sint64",
+          "name": "send_max",
+          "options": {},
+          "id": 3
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "destination_account",
+          "options": {},
+          "id": 4
+        },
+        {
+          "rule": "optional",
+          "type": "StellarAssetType",
+          "name": "destination_asset",
+          "options": {},
+          "id": 5
+        },
+        {
+          "rule": "optional",
+          "type": "sint64",
+          "name": "destination_amount",
+          "options": {},
+          "id": 6
+        },
+        {
+          "rule": "repeated",
+          "type": "StellarAssetType",
+          "name": "paths",
+          "options": {},
+          "id": 7
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "StellarManageOfferOp",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "source_account",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "StellarAssetType",
+          "name": "selling_asset",
+          "options": {},
+          "id": 2
+        },
+        {
+          "rule": "optional",
+          "type": "StellarAssetType",
+          "name": "buying_asset",
+          "options": {},
+          "id": 3
+        },
+        {
+          "rule": "optional",
+          "type": "sint64",
+          "name": "amount",
+          "options": {},
+          "id": 4
+        },
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "price_n",
+          "options": {},
+          "id": 5
+        },
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "price_d",
+          "options": {},
+          "id": 6
+        },
+        {
+          "rule": "optional",
+          "type": "uint64",
+          "name": "offer_id",
+          "options": {},
+          "id": 7
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "StellarCreatePassiveOfferOp",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "source_account",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "StellarAssetType",
+          "name": "selling_asset",
+          "options": {},
+          "id": 2
+        },
+        {
+          "rule": "optional",
+          "type": "StellarAssetType",
+          "name": "buying_asset",
+          "options": {},
+          "id": 3
+        },
+        {
+          "rule": "optional",
+          "type": "sint64",
+          "name": "amount",
+          "options": {},
+          "id": 4
+        },
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "price_n",
+          "options": {},
+          "id": 5
+        },
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "price_d",
+          "options": {},
+          "id": 6
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "StellarSetOptionsOp",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "source_account",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "inflation_destination_account",
+          "options": {},
+          "id": 2
+        },
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "clear_flags",
+          "options": {},
+          "id": 3
+        },
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "set_flags",
+          "options": {},
+          "id": 4
+        },
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "master_weight",
+          "options": {},
+          "id": 5
+        },
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "low_threshold",
+          "options": {},
+          "id": 6
+        },
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "medium_threshold",
+          "options": {},
+          "id": 7
+        },
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "high_threshold",
+          "options": {},
+          "id": 8
+        },
+        {
+          "rule": "optional",
+          "type": "string",
+          "name": "home_domain",
+          "options": {},
+          "id": 9
+        },
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "signer_type",
+          "options": {},
+          "id": 10
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "signer_key",
+          "options": {},
+          "id": 11
+        },
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "signer_weight",
+          "options": {},
+          "id": 12
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "StellarChangeTrustOp",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "source_account",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "StellarAssetType",
+          "name": "asset",
+          "options": {},
+          "id": 2
+        },
+        {
+          "rule": "optional",
+          "type": "uint64",
+          "name": "limit",
+          "options": {},
+          "id": 3
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "StellarAllowTrustOp",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "source_account",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "trusted_account",
+          "options": {},
+          "id": 2
+        },
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "asset_type",
+          "options": {},
+          "id": 3
+        },
+        {
+          "rule": "optional",
+          "type": "string",
+          "name": "asset_code",
+          "options": {},
+          "id": 4
+        },
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "is_authorized",
+          "options": {},
+          "id": 5
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "StellarAccountMergeOp",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "source_account",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "destination_account",
+          "options": {},
+          "id": 2
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "StellarManageDataOp",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "source_account",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "string",
+          "name": "key",
+          "options": {},
+          "id": 2
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "value",
+          "options": {},
+          "id": 3
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "StellarBumpSequenceOp",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "source_account",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "uint64",
+          "name": "bump_to",
+          "options": {},
+          "id": 2
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "StellarSignedTx",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "public_key",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "signature",
+          "options": {},
+          "id": 2
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "LiskGetPublicKey",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "repeated",
+          "type": "uint32",
+          "name": "address_n",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "bool",
+          "name": "show_display",
+          "options": {},
+          "id": 2
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "LiskPublicKey",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "public_key",
+          "options": {},
+          "id": 1
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "LiskGetAddress",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "repeated",
+          "type": "uint32",
+          "name": "address_n",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "bool",
+          "name": "show_display",
+          "options": {},
+          "id": 2
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "LiskAddress",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "string",
+          "name": "address",
+          "options": {},
+          "id": 1
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "LiskSignTx",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "repeated",
+          "type": "uint32",
+          "name": "address_n",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "LiskTransactionCommon",
+          "name": "transaction",
+          "options": {},
+          "id": 2
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "LiskSignedTx",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "signature",
+          "options": {},
+          "id": 1
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "LiskSignMessage",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "repeated",
+          "type": "uint32",
+          "name": "address_n",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "message",
+          "options": {},
+          "id": 2
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "LiskMessageSignature",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "public_key",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "signature",
+          "options": {},
+          "id": 2
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "LiskVerifyMessage",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "public_key",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "signature",
+          "options": {},
+          "id": 2
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "message",
+          "options": {},
+          "id": 3
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "DebugLinkDecision",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "bool",
+          "name": "yes_no",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "bool",
+          "name": "up_down",
+          "options": {},
+          "id": 2
+        },
+        {
+          "rule": "optional",
+          "type": "string",
+          "name": "input",
+          "options": {},
+          "id": 3
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "DebugLinkGetState",
+      "options": {},
+      "messages": [],
+      "fields": [],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "DebugLinkState",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "layout",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "string",
+          "name": "pin",
+          "options": {},
+          "id": 2
+        },
+        {
+          "rule": "optional",
+          "type": "string",
+          "name": "matrix",
+          "options": {},
+          "id": 3
+        },
+        {
+          "rule": "optional",
+          "type": "string",
+          "name": "mnemonic",
+          "options": {},
+          "id": 4
+        },
+        {
+          "rule": "optional",
+          "type": "HDNodeType",
+          "name": "node",
+          "options": {},
+          "id": 5
+        },
+        {
+          "rule": "optional",
+          "type": "bool",
+          "name": "passphrase_protection",
+          "options": {},
+          "id": 6
+        },
+        {
+          "rule": "optional",
+          "type": "string",
+          "name": "reset_word",
+          "options": {},
+          "id": 7
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "reset_entropy",
+          "options": {},
+          "id": 8
+        },
+        {
+          "rule": "optional",
+          "type": "string",
+          "name": "recovery_fake_word",
+          "options": {},
+          "id": 9
+        },
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "recovery_word_pos",
+          "options": {},
+          "id": 10
+        },
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "reset_word_pos",
+          "options": {},
+          "id": 11
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "DebugLinkStop",
+      "options": {},
+      "messages": [],
+      "fields": [],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "DebugLinkLog",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "level",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "string",
+          "name": "bucket",
+          "options": {},
+          "id": 2
+        },
+        {
+          "rule": "optional",
+          "type": "string",
+          "name": "text",
+          "options": {},
+          "id": 3
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "DebugLinkMemoryRead",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "address",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "length",
+          "options": {},
+          "id": 2
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "DebugLinkMemory",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "memory",
+          "options": {},
+          "id": 1
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "DebugLinkMemoryWrite",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "address",
+          "options": {},
+          "id": 1
+        },
+        {
+          "rule": "optional",
+          "type": "bytes",
+          "name": "memory",
+          "options": {},
+          "id": 2
+        },
+        {
+          "rule": "optional",
+          "type": "bool",
+          "name": "flash",
+          "options": {},
+          "id": 3
+        }
+      ],
+      "oneofs": {}
+    },
+    {
+      "enums": [],
+      "name": "DebugLinkFlashErase",
+      "options": {},
+      "messages": [],
+      "fields": [
+        {
+          "rule": "optional",
+          "type": "uint32",
+          "name": "sector",
+          "options": {},
+          "id": 1
+        }
+      ],
+      "oneofs": {}
+    }
+  ],
+  "enums": [
+    {
+      "name": "MessageType",
+      "values": [
+        {
+          "name": "MessageType_Initialize",
+          "id": 0
+        },
+        {
+          "name": "MessageType_Ping",
+          "id": 1
+        },
+        {
+          "name": "MessageType_Success",
+          "id": 2
+        },
+        {
+          "name": "MessageType_Failure",
+          "id": 3
+        },
+        {
+          "name": "MessageType_ChangePin",
+          "id": 4
+        },
+        {
+          "name": "MessageType_WipeDevice",
+          "id": 5
+        },
+        {
+          "name": "MessageType_FirmwareErase",
+          "id": 6
+        },
+        {
+          "name": "MessageType_FirmwareUpload",
+          "id": 7
+        },
+        {
+          "name": "MessageType_FirmwareRequest",
+          "id": 8
+        },
+        {
+          "name": "MessageType_GetEntropy",
+          "id": 9
+        },
+        {
+          "name": "MessageType_Entropy",
+          "id": 10
+        },
+        {
+          "name": "MessageType_GetPublicKey",
+          "id": 11
+        },
+        {
+          "name": "MessageType_PublicKey",
+          "id": 12
+        },
+        {
+          "name": "MessageType_LoadDevice",
+          "id": 13
+        },
+        {
+          "name": "MessageType_ResetDevice",
+          "id": 14
+        },
+        {
+          "name": "MessageType_SignTx",
+          "id": 15
+        },
+        {
+          "name": "MessageType_SimpleSignTx",
+          "id": 16
+        },
+        {
+          "name": "MessageType_Features",
+          "id": 17
+        },
+        {
+          "name": "MessageType_PinMatrixRequest",
+          "id": 18
+        },
+        {
+          "name": "MessageType_PinMatrixAck",
+          "id": 19
+        },
+        {
+          "name": "MessageType_Cancel",
+          "id": 20
+        },
+        {
+          "name": "MessageType_TxRequest",
+          "id": 21
+        },
+        {
+          "name": "MessageType_TxAck",
+          "id": 22
+        },
+        {
+          "name": "MessageType_CipherKeyValue",
+          "id": 23
+        },
+        {
+          "name": "MessageType_ClearSession",
+          "id": 24
+        },
+        {
+          "name": "MessageType_ApplySettings",
+          "id": 25
+        },
+        {
+          "name": "MessageType_ButtonRequest",
+          "id": 26
+        },
+        {
+          "name": "MessageType_ButtonAck",
+          "id": 27
+        },
+        {
+          "name": "MessageType_ApplyFlags",
+          "id": 28
+        },
+        {
+          "name": "MessageType_GetAddress",
+          "id": 29
+        },
+        {
+          "name": "MessageType_Address",
+          "id": 30
+        },
+        {
+          "name": "MessageType_SelfTest",
+          "id": 32
+        },
+        {
+          "name": "MessageType_BackupDevice",
+          "id": 34
+        },
+        {
+          "name": "MessageType_EntropyRequest",
+          "id": 35
+        },
+        {
+          "name": "MessageType_EntropyAck",
+          "id": 36
+        },
+        {
+          "name": "MessageType_SignMessage",
+          "id": 38
+        },
+        {
+          "name": "MessageType_VerifyMessage",
+          "id": 39
+        },
+        {
+          "name": "MessageType_MessageSignature",
+          "id": 40
+        },
+        {
+          "name": "MessageType_PassphraseRequest",
+          "id": 41
+        },
+        {
+          "name": "MessageType_PassphraseAck",
+          "id": 42
+        },
+        {
+          "name": "MessageType_PassphraseStateRequest",
+          "id": 77
+        },
+        {
+          "name": "MessageType_PassphraseStateAck",
+          "id": 78
+        },
+        {
+          "name": "MessageType_EstimateTxSize",
+          "id": 43
+        },
+        {
+          "name": "MessageType_TxSize",
+          "id": 44
+        },
+        {
+          "name": "MessageType_RecoveryDevice",
+          "id": 45
+        },
+        {
+          "name": "MessageType_WordRequest",
+          "id": 46
+        },
+        {
+          "name": "MessageType_WordAck",
+          "id": 47
+        },
+        {
+          "name": "MessageType_CipheredKeyValue",
+          "id": 48
+        },
+        {
+          "name": "MessageType_EncryptMessage",
+          "id": 49
+        },
+        {
+          "name": "MessageType_EncryptedMessage",
+          "id": 50
+        },
+        {
+          "name": "MessageType_DecryptMessage",
+          "id": 51
+        },
+        {
+          "name": "MessageType_DecryptedMessage",
+          "id": 52
+        },
+        {
+          "name": "MessageType_SignIdentity",
+          "id": 53
+        },
+        {
+          "name": "MessageType_SignedIdentity",
+          "id": 54
+        },
+        {
+          "name": "MessageType_GetFeatures",
+          "id": 55
+        },
+        {
+          "name": "MessageType_EthereumGetAddress",
+          "id": 56
+        },
+        {
+          "name": "MessageType_EthereumAddress",
+          "id": 57
+        },
+        {
+          "name": "MessageType_EthereumSignTx",
+          "id": 58
+        },
+        {
+          "name": "MessageType_EthereumTxRequest",
+          "id": 59
+        },
+        {
+          "name": "MessageType_EthereumTxAck",
+          "id": 60
+        },
+        {
+          "name": "MessageType_GetECDHSessionKey",
+          "id": 61
+        },
+        {
+          "name": "MessageType_ECDHSessionKey",
+          "id": 62
+        },
+        {
+          "name": "MessageType_SetU2FCounter",
+          "id": 63
+        },
+        {
+          "name": "MessageType_EthereumSignMessage",
+          "id": 64
+        },
+        {
+          "name": "MessageType_EthereumVerifyMessage",
+          "id": 65
+        },
+        {
+          "name": "MessageType_EthereumMessageSignature",
+          "id": 66
+        },
+        {
+          "name": "MessageType_NEMGetAddress",
+          "id": 67
+        },
+        {
+          "name": "MessageType_NEMAddress",
+          "id": 68
+        },
+        {
+          "name": "MessageType_NEMSignTx",
+          "id": 69
+        },
+        {
+          "name": "MessageType_NEMSignedTx",
+          "id": 70
+        },
+        {
+          "name": "MessageType_CosiCommit",
+          "id": 71
+        },
+        {
+          "name": "MessageType_CosiCommitment",
+          "id": 72
+        },
+        {
+          "name": "MessageType_CosiSign",
+          "id": 73
+        },
+        {
+          "name": "MessageType_CosiSignature",
+          "id": 74
+        },
+        {
+          "name": "MessageType_NEMDecryptMessage",
+          "id": 75
+        },
+        {
+          "name": "MessageType_NEMDecryptedMessage",
+          "id": 76
+        },
+        {
+          "name": "MessageType_DebugLinkDecision",
+          "id": 100
+        },
+        {
+          "name": "MessageType_DebugLinkGetState",
+          "id": 101
+        },
+        {
+          "name": "MessageType_DebugLinkState",
+          "id": 102
+        },
+        {
+          "name": "MessageType_DebugLinkStop",
+          "id": 103
+        },
+        {
+          "name": "MessageType_DebugLinkLog",
+          "id": 104
+        },
+        {
+          "name": "MessageType_DebugLinkMemoryRead",
+          "id": 110
+        },
+        {
+          "name": "MessageType_DebugLinkMemory",
+          "id": 111
+        },
+        {
+          "name": "MessageType_DebugLinkMemoryWrite",
+          "id": 112
+        },
+        {
+          "name": "MessageType_DebugLinkFlashErase",
+          "id": 113
+        },
+        {
+          "name": "MessageType_LiskGetAddress",
+          "id": 114
+        },
+        {
+          "name": "MessageType_LiskAddress",
+          "id": 115
+        },
+        {
+          "name": "MessageType_LiskSignTx",
+          "id": 116
+        },
+        {
+          "name": "MessageType_LiskSignedTx",
+          "id": 117
+        },
+        {
+          "name": "MessageType_LiskSignMessage",
+          "id": 118
+        },
+        {
+          "name": "MessageType_LiskMessageSignature",
+          "id": 119
+        },
+        {
+          "name": "MessageType_LiskVerifyMessage",
+          "id": 120
+        },
+        {
+          "name": "MessageType_LiskGetPublicKey",
+          "id": 121
+        },
+        {
+          "name": "MessageType_LiskPublicKey",
+          "id": 122
+        },
+        {
+          "name": "MessageType_StellarGetPublicKey",
+          "id": 200
+        },
+        {
+          "name": "MessageType_StellarPublicKey",
+          "id": 201
+        },
+        {
+          "name": "MessageType_StellarSignTx",
+          "id": 202
+        },
+        {
+          "name": "MessageType_StellarTxOpRequest",
+          "id": 203
+        },
+        {
+          "name": "MessageType_StellarGetAddress",
+          "id": 207
+        },
+        {
+          "name": "MessageType_StellarAddress",
+          "id": 208
+        },
+        {
+          "name": "MessageType_StellarCreateAccountOp",
+          "id": 210
+        },
+        {
+          "name": "MessageType_StellarPaymentOp",
+          "id": 211
+        },
+        {
+          "name": "MessageType_StellarPathPaymentOp",
+          "id": 212
+        },
+        {
+          "name": "MessageType_StellarManageOfferOp",
+          "id": 213
+        },
+        {
+          "name": "MessageType_StellarCreatePassiveOfferOp",
+          "id": 214
+        },
+        {
+          "name": "MessageType_StellarSetOptionsOp",
+          "id": 215
+        },
+        {
+          "name": "MessageType_StellarChangeTrustOp",
+          "id": 216
+        },
+        {
+          "name": "MessageType_StellarAllowTrustOp",
+          "id": 217
+        },
+        {
+          "name": "MessageType_StellarAccountMergeOp",
+          "id": 218
+        },
+        {
+          "name": "MessageType_StellarManageDataOp",
+          "id": 220
+        },
+        {
+          "name": "MessageType_StellarBumpSequenceOp",
+          "id": 221
+        },
+        {
+          "name": "MessageType_StellarSignedTx",
+          "id": 230
+        },
+        {
+          "name": "MessageType_OntologyGetAddress",
+          "id": 350
+        },
+        {
+            "name": "MessageType_OntologyAddress",
+            "id": 351
+        },
+        {
+            "name": "MessageType_OntologySignTx",
+            "id": 352
+        },
+        {
+            "name": "MessageType_OntologySignedTx",
+            "id": 353
+        },
+        {
+            "name": "MessageType_OntologyGetPublicKey",
+            "id": 354
+        },
+        {
+            "name": "MessageType_OntologyPublicKey",
+            "id": 355
+        }
+      ],
+      "options": {}
+    }
+  ],
+  "imports": [
+    {
+      "package": null,
+      "options": {
+        "java_package": "com.satoshilabs.trezor.lib.protobuf",
+        "java_outer_classname": "TrezorType",
+        "java_multiple_files": false,
+        "java_generate_equals_and_hash": false,
+        "optimize_for": 1,
+        "go_package": null,
+        "cc_generic_services": false,
+        "java_generic_services": false,
+        "py_generic_services": false,
+        "uninterpreted_option": {}
+      },
+      "services": [],
+      "messages": [
+        {
+          "ref": "google.protobuf.EnumValueOptions",
+          "fields": [
+            {
+              "rule": "optional",
+              "type": "bool",
+              "name": "wire_in",
+              "options": {},
+              "id": 50002
+            },
+            {
+              "rule": "optional",
+              "type": "bool",
+              "name": "wire_out",
+              "options": {},
+              "id": 50003
+            },
+            {
+              "rule": "optional",
+              "type": "bool",
+              "name": "wire_debug_in",
+              "options": {},
+              "id": 50004
+            },
+            {
+              "rule": "optional",
+              "type": "bool",
+              "name": "wire_debug_out",
+              "options": {},
+              "id": 50005
+            },
+            {
+              "rule": "optional",
+              "type": "bool",
+              "name": "wire_tiny",
+              "options": {},
+              "id": 50006
+            },
+            {
+              "rule": "optional",
+              "type": "bool",
+              "name": "wire_bootloader",
+              "options": {},
+              "id": 50007
+            }
+          ]
+        },
+        {
+          "enums": [],
+          "name": "HDNodeType",
+          "options": {},
+          "messages": [],
+          "fields": [
+            {
+              "rule": "required",
+              "type": "uint32",
+              "name": "depth",
+              "options": {},
+              "id": 1
+            },
+            {
+              "rule": "required",
+              "type": "uint32",
+              "name": "fingerprint",
+              "options": {},
+              "id": 2
+            },
+            {
+              "rule": "required",
+              "type": "uint32",
+              "name": "child_num",
+              "options": {},
+              "id": 3
+            },
+            {
+              "rule": "required",
+              "type": "bytes",
+              "name": "chain_code",
+              "options": {},
+              "id": 4
+            },
+            {
+              "rule": "optional",
+              "type": "bytes",
+              "name": "private_key",
+              "options": {},
+              "id": 5
+            },
+            {
+              "rule": "optional",
+              "type": "bytes",
+              "name": "public_key",
+              "options": {},
+              "id": 6
+            }
+          ],
+          "oneofs": {}
+        },
+        {
+          "enums": [],
+          "name": "HDNodePathType",
+          "options": {},
+          "messages": [],
+          "fields": [
+            {
+              "rule": "required",
+              "type": "HDNodeType",
+              "name": "node",
+              "options": {},
+              "id": 1
+            },
+            {
+              "rule": "repeated",
+              "type": "uint32",
+              "name": "address_n",
+              "options": {},
+              "id": 2
+            }
+          ],
+          "oneofs": {}
+        },
+        {
+          "enums": [],
+          "name": "MultisigRedeemScriptType",
+          "options": {},
+          "messages": [],
+          "fields": [
+            {
+              "rule": "repeated",
+              "type": "HDNodePathType",
+              "name": "pubkeys",
+              "options": {},
+              "id": 1
+            },
+            {
+              "rule": "repeated",
+              "type": "bytes",
+              "name": "signatures",
+              "options": {},
+              "id": 2
+            },
+            {
+              "rule": "optional",
+              "type": "uint32",
+              "name": "m",
+              "options": {},
+              "id": 3
+            }
+          ],
+          "oneofs": {}
+        },
+        {
+          "enums": [],
+          "name": "TxInputType",
+          "options": {},
+          "messages": [],
+          "fields": [
+            {
+              "rule": "repeated",
+              "type": "uint32",
+              "name": "address_n",
+              "options": {},
+              "id": 1
+            },
+            {
+              "rule": "required",
+              "type": "bytes",
+              "name": "prev_hash",
+              "options": {},
+              "id": 2
+            },
+            {
+              "rule": "required",
+              "type": "uint32",
+              "name": "prev_index",
+              "options": {},
+              "id": 3
+            },
+            {
+              "rule": "optional",
+              "type": "bytes",
+              "name": "script_sig",
+              "options": {},
+              "id": 4
+            },
+            {
+              "rule": "optional",
+              "type": "uint32",
+              "name": "sequence",
+              "options": {},
+              "id": 5
+            },
+            {
+              "rule": "optional",
+              "type": "InputScriptType",
+              "name": "script_type",
+              "options": {},
+              "id": 6
+            },
+            {
+              "rule": "optional",
+              "type": "MultisigRedeemScriptType",
+              "name": "multisig",
+              "options": {},
+              "id": 7
+            },
+            {
+              "rule": "optional",
+              "type": "uint64",
+              "name": "amount",
+              "options": {},
+              "id": 8
+            },
+            {
+              "rule": "optional",
+              "type": "uint32",
+              "name": "decred_tree",
+              "options": {},
+              "id": 9
+            },
+            {
+              "rule": "optional",
+              "type": "uint32",
+              "name": "decred_script_version",
+              "options": {},
+              "id": 10
+            }
+          ],
+          "oneofs": {}
+        },
+        {
+          "enums": [],
+          "name": "TxOutputType",
+          "options": {},
+          "messages": [],
+          "fields": [
+            {
+              "rule": "optional",
+              "type": "string",
+              "name": "address",
+              "options": {},
+              "id": 1
+            },
+            {
+              "rule": "repeated",
+              "type": "uint32",
+              "name": "address_n",
+              "options": {},
+              "id": 2
+            },
+            {
+              "rule": "required",
+              "type": "uint64",
+              "name": "amount",
+              "options": {},
+              "id": 3
+            },
+            {
+              "rule": "required",
+              "type": "OutputScriptType",
+              "name": "script_type",
+              "options": {},
+              "id": 4
+            },
+            {
+              "rule": "optional",
+              "type": "MultisigRedeemScriptType",
+              "name": "multisig",
+              "options": {},
+              "id": 5
+            },
+            {
+              "rule": "optional",
+              "type": "bytes",
+              "name": "op_return_data",
+              "options": {},
+              "id": 6
+            },
+            {
+              "rule": "optional",
+              "type": "uint32",
+              "name": "decred_script_version",
+              "options": {},
+              "id": 7
+            }
+          ],
+          "oneofs": {}
+        },
+        {
+          "enums": [],
+          "name": "TxOutputBinType",
+          "options": {},
+          "messages": [],
+          "fields": [
+            {
+              "rule": "required",
+              "type": "uint64",
+              "name": "amount",
+              "options": {},
+              "id": 1
+            },
+            {
+              "rule": "required",
+              "type": "bytes",
+              "name": "script_pubkey",
+              "options": {},
+              "id": 2
+            },
+            {
+              "rule": "optional",
+              "type": "uint32",
+              "name": "decred_script_version",
+              "options": {},
+              "id": 3
+            }
+          ],
+          "oneofs": {}
+        },
+        {
+          "enums": [],
+          "name": "TransactionType",
+          "options": {},
+          "messages": [],
+          "fields": [
+            {
+              "rule": "optional",
+              "type": "uint32",
+              "name": "version",
+              "options": {},
+              "id": 1
+            },
+            {
+              "rule": "repeated",
+              "type": "TxInputType",
+              "name": "inputs",
+              "options": {},
+              "id": 2
+            },
+            {
+              "rule": "repeated",
+              "type": "TxOutputBinType",
+              "name": "bin_outputs",
+              "options": {},
+              "id": 3
+            },
+            {
+              "rule": "repeated",
+              "type": "TxOutputType",
+              "name": "outputs",
+              "options": {},
+              "id": 5
+            },
+            {
+              "rule": "optional",
+              "type": "uint32",
+              "name": "lock_time",
+              "options": {},
+              "id": 4
+            },
+            {
+              "rule": "optional",
+              "type": "uint32",
+              "name": "inputs_cnt",
+              "options": {},
+              "id": 6
+            },
+            {
+              "rule": "optional",
+              "type": "uint32",
+              "name": "outputs_cnt",
+              "options": {},
+              "id": 7
+            },
+            {
+              "rule": "optional",
+              "type": "bytes",
+              "name": "extra_data",
+              "options": {},
+              "id": 8
+            },
+            {
+              "rule": "optional",
+              "type": "uint32",
+              "name": "extra_data_len",
+              "options": {},
+              "id": 9
+            },
+            {
+              "rule": "optional",
+              "type": "uint32",
+              "name": "expiry",
+              "options": {},
+              "id": 10
+            },
+            {
+              "rule": "optional",
+              "type": "bool",
+              "name": "overwintered",
+              "options": {},
+              "id": 11
+            }
+          ],
+          "oneofs": {}
+        },
+        {
+          "enums": [],
+          "name": "TxRequestDetailsType",
+          "options": {},
+          "messages": [],
+          "fields": [
+            {
+              "rule": "optional",
+              "type": "uint32",
+              "name": "request_index",
+              "options": {},
+              "id": 1
+            },
+            {
+              "rule": "optional",
+              "type": "bytes",
+              "name": "tx_hash",
+              "options": {},
+              "id": 2
+            },
+            {
+              "rule": "optional",
+              "type": "uint32",
+              "name": "extra_data_len",
+              "options": {},
+              "id": 3
+            },
+            {
+              "rule": "optional",
+              "type": "uint32",
+              "name": "extra_data_offset",
+              "options": {},
+              "id": 4
+            }
+          ],
+          "oneofs": {}
+        },
+        {
+          "enums": [],
+          "name": "TxRequestSerializedType",
+          "options": {},
+          "messages": [],
+          "fields": [
+            {
+              "rule": "optional",
+              "type": "uint32",
+              "name": "signature_index",
+              "options": {},
+              "id": 1
+            },
+            {
+              "rule": "optional",
+              "type": "bytes",
+              "name": "signature",
+              "options": {},
+              "id": 2
+            },
+            {
+              "rule": "optional",
+              "type": "bytes",
+              "name": "serialized_tx",
+              "options": {},
+              "id": 3
+            }
+          ],
+          "oneofs": {}
+        },
+        {
+          "enums": [],
+          "name": "IdentityType",
+          "options": {},
+          "messages": [],
+          "fields": [
+            {
+              "rule": "optional",
+              "type": "string",
+              "name": "proto",
+              "options": {},
+              "id": 1
+            },
+            {
+              "rule": "optional",
+              "type": "string",
+              "name": "user",
+              "options": {},
+              "id": 2
+            },
+            {
+              "rule": "optional",
+              "type": "string",
+              "name": "host",
+              "options": {},
+              "id": 3
+            },
+            {
+              "rule": "optional",
+              "type": "string",
+              "name": "port",
+              "options": {},
+              "id": 4
+            },
+            {
+              "rule": "optional",
+              "type": "string",
+              "name": "path",
+              "options": {},
+              "id": 5
+            },
+            {
+              "rule": "optional",
+              "type": "uint32",
+              "name": "index",
+              "options": {},
+              "id": 6
+            }
+          ],
+          "oneofs": {}
+        },
+        {
+          "enums": [],
+          "name": "NEMTransactionCommon",
+          "options": {},
+          "messages": [],
+          "fields": [
+            {
+              "rule": "repeated",
+              "type": "uint32",
+              "name": "address_n",
+              "options": {},
+              "id": 1
+            },
+            {
+              "rule": "optional",
+              "type": "uint32",
+              "name": "network",
+              "options": {},
+              "id": 2
+            },
+            {
+              "rule": "optional",
+              "type": "uint32",
+              "name": "timestamp",
+              "options": {},
+              "id": 3
+            },
+            {
+              "rule": "optional",
+              "type": "uint64",
+              "name": "fee",
+              "options": {},
+              "id": 4
+            },
+            {
+              "rule": "optional",
+              "type": "uint32",
+              "name": "deadline",
+              "options": {},
+              "id": 5
+            },
+            {
+              "rule": "optional",
+              "type": "bytes",
+              "name": "signer",
+              "options": {},
+              "id": 6
+            }
+          ],
+          "oneofs": {}
+        },
+        {
+          "enums": [],
+          "name": "NEMTransfer",
+          "options": {},
+          "messages": [],
+          "fields": [
+            {
+              "rule": "optional",
+              "type": "string",
+              "name": "recipient",
+              "options": {},
+              "id": 1
+            },
+            {
+              "rule": "optional",
+              "type": "uint64",
+              "name": "amount",
+              "options": {},
+              "id": 2
+            },
+            {
+              "rule": "optional",
+              "type": "bytes",
+              "name": "payload",
+              "options": {},
+              "id": 3
+            },
+            {
+              "rule": "optional",
+              "type": "bytes",
+              "name": "public_key",
+              "options": {},
+              "id": 4
+            },
+            {
+              "rule": "repeated",
+              "type": "NEMMosaic",
+              "name": "mosaics",
+              "options": {},
+              "id": 5
+            }
+          ],
+          "oneofs": {}
+        },
+        {
+          "enums": [],
+          "name": "NEMMosaic",
+          "options": {},
+          "messages": [],
+          "fields": [
+            {
+              "rule": "optional",
+              "type": "string",
+              "name": "namespace",
+              "options": {},
+              "id": 1
+            },
+            {
+              "rule": "optional",
+              "type": "string",
+              "name": "mosaic",
+              "options": {},
+              "id": 2
+            },
+            {
+              "rule": "optional",
+              "type": "uint64",
+              "name": "quantity",
+              "options": {},
+              "id": 3
+            }
+          ],
+          "oneofs": {}
+        },
+        {
+          "enums": [],
+          "name": "NEMProvisionNamespace",
+          "options": {},
+          "messages": [],
+          "fields": [
+            {
+              "rule": "optional",
+              "type": "string",
+              "name": "namespace",
+              "options": {},
+              "id": 1
+            },
+            {
+              "rule": "optional",
+              "type": "string",
+              "name": "parent",
+              "options": {},
+              "id": 2
+            },
+            {
+              "rule": "optional",
+              "type": "string",
+              "name": "sink",
+              "options": {},
+              "id": 3
+            },
+            {
+              "rule": "optional",
+              "type": "uint64",
+              "name": "fee",
+              "options": {},
+              "id": 4
+            }
+          ],
+          "oneofs": {}
+        },
+        {
+          "enums": [],
+          "name": "NEMMosaicCreation",
+          "options": {},
+          "messages": [],
+          "fields": [
+            {
+              "rule": "optional",
+              "type": "NEMMosaicDefinition",
+              "name": "definition",
+              "options": {},
+              "id": 1
+            },
+            {
+              "rule": "optional",
+              "type": "string",
+              "name": "sink",
+              "options": {},
+              "id": 2
+            },
+            {
+              "rule": "optional",
+              "type": "uint64",
+              "name": "fee",
+              "options": {},
+              "id": 3
+            }
+          ],
+          "oneofs": {}
+        },
+        {
+          "enums": [],
+          "name": "NEMMosaicDefinition",
+          "options": {},
+          "messages": [],
+          "fields": [
+            {
+              "rule": "optional",
+              "type": "string",
+              "name": "name",
+              "options": {},
+              "id": 1
+            },
+            {
+              "rule": "optional",
+              "type": "string",
+              "name": "ticker",
+              "options": {},
+              "id": 2
+            },
+            {
+              "rule": "optional",
+              "type": "string",
+              "name": "namespace",
+              "options": {},
+              "id": 3
+            },
+            {
+              "rule": "optional",
+              "type": "string",
+              "name": "mosaic",
+              "options": {},
+              "id": 4
+            },
+            {
+              "rule": "optional",
+              "type": "uint32",
+              "name": "divisibility",
+              "options": {},
+              "id": 5
+            },
+            {
+              "rule": "optional",
+              "type": "NEMMosaicLevy",
+              "name": "levy",
+              "options": {},
+              "id": 6
+            },
+            {
+              "rule": "optional",
+              "type": "uint64",
+              "name": "fee",
+              "options": {},
+              "id": 7
+            },
+            {
+              "rule": "optional",
+              "type": "string",
+              "name": "levy_address",
+              "options": {},
+              "id": 8
+            },
+            {
+              "rule": "optional",
+              "type": "string",
+              "name": "levy_namespace",
+              "options": {},
+              "id": 9
+            },
+            {
+              "rule": "optional",
+              "type": "string",
+              "name": "levy_mosaic",
+              "options": {},
+              "id": 10
+            },
+            {
+              "rule": "optional",
+              "type": "uint64",
+              "name": "supply",
+              "options": {},
+              "id": 11
+            },
+            {
+              "rule": "optional",
+              "type": "bool",
+              "name": "mutable_supply",
+              "options": {},
+              "id": 12
+            },
+            {
+              "rule": "optional",
+              "type": "bool",
+              "name": "transferable",
+              "options": {},
+              "id": 13
+            },
+            {
+              "rule": "optional",
+              "type": "string",
+              "name": "description",
+              "options": {},
+              "id": 14
+            },
+            {
+              "rule": "repeated",
+              "type": "uint32",
+              "name": "networks",
+              "options": {},
+              "id": 15
+            }
+          ],
+          "oneofs": {}
+        },
+        {
+          "enums": [],
+          "name": "NEMMosaicSupplyChange",
+          "options": {},
+          "messages": [],
+          "fields": [
+            {
+              "rule": "optional",
+              "type": "string",
+              "name": "namespace",
+              "options": {},
+              "id": 1
+            },
+            {
+              "rule": "optional",
+              "type": "string",
+              "name": "mosaic",
+              "options": {},
+              "id": 2
+            },
+            {
+              "rule": "optional",
+              "type": "NEMSupplyChangeType",
+              "name": "type",
+              "options": {},
+              "id": 3
+            },
+            {
+              "rule": "optional",
+              "type": "uint64",
+              "name": "delta",
+              "options": {},
+              "id": 4
+            }
+          ],
+          "oneofs": {}
+        },
+        {
+          "enums": [],
+          "name": "NEMAggregateModification",
+          "options": {},
+          "messages": [],
+          "fields": [
+            {
+              "rule": "repeated",
+              "type": "NEMCosignatoryModification",
+              "name": "modifications",
+              "options": {},
+              "id": 1
+            },
+            {
+              "rule": "optional",
+              "type": "sint32",
+              "name": "relative_change",
+              "options": {},
+              "id": 2
+            }
+          ],
+          "oneofs": {}
+        },
+        {
+          "enums": [],
+          "name": "NEMCosignatoryModification",
+          "options": {},
+          "messages": [],
+          "fields": [
+            {
+              "rule": "optional",
+              "type": "NEMModificationType",
+              "name": "type",
+              "options": {},
+              "id": 1
+            },
+            {
+              "rule": "optional",
+              "type": "bytes",
+              "name": "public_key",
+              "options": {},
+              "id": 2
+            }
+          ],
+          "oneofs": {}
+        },
+        {
+          "enums": [],
+          "name": "NEMImportanceTransfer",
+          "options": {},
+          "messages": [],
+          "fields": [
+            {
+              "rule": "optional",
+              "type": "NEMImportanceTransferMode",
+              "name": "mode",
+              "options": {},
+              "id": 1
+            },
+            {
+              "rule": "optional",
+              "type": "bytes",
+              "name": "public_key",
+              "options": {},
+              "id": 2
+            }
+          ],
+          "oneofs": {}
+        },
+        {
+          "enums": [],
+          "name": "StellarAssetType",
+          "options": {},
+          "messages": [],
+          "fields": [
+            {
+              "rule": "optional",
+              "type": "uint32",
+              "name": "type",
+              "options": {},
+              "id": 1
+            },
+            {
+              "rule": "optional",
+              "type": "string",
+              "name": "code",
+              "options": {},
+              "id": 2
+            },
+            {
+              "rule": "optional",
+              "type": "bytes",
+              "name": "issuer",
+              "options": {},
+              "id": 3
+            }
+          ],
+          "oneofs": {}
+        },
+        {
+          "enums": [],
+          "name": "LiskTransactionCommon",
+          "options": {},
+          "messages": [],
+          "fields": [
+            {
+              "rule": "optional",
+              "type": "LiskTransactionType",
+              "name": "type",
+              "options": {},
+              "id": 1
+            },
+            {
+              "rule": "optional",
+              "type": "uint64",
+              "name": "amount",
+              "options": {},
+              "id": 2
+            },
+            {
+              "rule": "optional",
+              "type": "uint64",
+              "name": "fee",
+              "options": {},
+              "id": 3
+            },
+            {
+              "rule": "optional",
+              "type": "string",
+              "name": "recipient_id",
+              "options": {},
+              "id": 4
+            },
+            {
+              "rule": "optional",
+              "type": "bytes",
+              "name": "sender_public_key",
+              "options": {},
+              "id": 5
+            },
+            {
+              "rule": "optional",
+              "type": "bytes",
+              "name": "requester_public_key",
+              "options": {},
+              "id": 6
+            },
+            {
+              "rule": "optional",
+              "type": "bytes",
+              "name": "signature",
+              "options": {},
+              "id": 7
+            },
+            {
+              "rule": "optional",
+              "type": "uint32",
+              "name": "timestamp",
+              "options": {},
+              "id": 8
+            },
+            {
+              "rule": "optional",
+              "type": "LiskTransactionAsset",
+              "name": "asset",
+              "options": {},
+              "id": 9
+            }
+          ],
+          "oneofs": {}
+        },
+        {
+          "enums": [],
+          "name": "LiskTransactionAsset",
+          "options": {},
+          "messages": [],
+          "fields": [
+            {
+              "rule": "optional",
+              "type": "LiskSignatureType",
+              "name": "signature",
+              "options": {},
+              "id": 1
+            },
+            {
+              "rule": "optional",
+              "type": "LiskDelegateType",
+              "name": "delegate",
+              "options": {},
+              "id": 2
+            },
+            {
+              "rule": "repeated",
+              "type": "string",
+              "name": "votes",
+              "options": {},
+              "id": 3
+            },
+            {
+              "rule": "optional",
+              "type": "LiskMultisignatureType",
+              "name": "multisignature",
+              "options": {},
+              "id": 4
+            },
+            {
+              "rule": "optional",
+              "type": "string",
+              "name": "data",
+              "options": {},
+              "id": 5
+            }
+          ],
+          "oneofs": {}
+        },
+        {
+          "enums": [],
+          "name": "LiskSignatureType",
+          "options": {},
+          "messages": [],
+          "fields": [
+            {
+              "rule": "optional",
+              "type": "bytes",
+              "name": "public_key",
+              "options": {},
+              "id": 1
+            }
+          ],
+          "oneofs": {}
+        },
+        {
+          "enums": [],
+          "name": "LiskDelegateType",
+          "options": {},
+          "messages": [],
+          "fields": [
+            {
+              "rule": "optional",
+              "type": "string",
+              "name": "username",
+              "options": {},
+              "id": 1
+            }
+          ],
+          "oneofs": {}
+        },
+        {
+          "enums": [],
+          "name": "LiskMultisignatureType",
+          "options": {},
+          "messages": [],
+          "fields": [
+            {
+              "rule": "optional",
+              "type": "uint32",
+              "name": "min",
+              "options": {},
+              "id": 1
+            },
+            {
+              "rule": "optional",
+              "type": "uint32",
+              "name": "life_time",
+              "options": {},
+              "id": 2
+            },
+            {
+              "rule": "repeated",
+              "type": "string",
+              "name": "keys_group",
+              "options": {},
+              "id": 3
+            }
+          ],
+          "oneofs": {}
+        },
+        {
+          "name": "OntologyGetPublicKey",
+          "fields": [
+            {
+              "rule": "repeated",
+              "options": {},
+              "type": "uint32",
+              "name": "address_n",
+              "id": 1
+            },
+            {
+              "rule": "optional",
+              "options": {},
+              "type": "bool",
+              "name": "show_display",
+              "id": 2
+            }
+          ],
+          "enums": [],
+          "messages": [],
+          "options": {},
+          "oneofs": {}
+        },
+        {
+          "name": "OntologyPublicKey",
+          "fields": [
+            {
+              "rule": "optional",
+              "options": {},
+              "type": "bytes",
+              "name": "public_key",
+              "id": 1
+            }
+          ],
+          "enums": [],
+          "messages": [],
+          "options": {},
+          "oneofs": {}
+        },
+        {
+          "name": "OntologyGetAddress",
+          "fields": [
+            {
+              "rule": "repeated",
+              "options": {},
+              "type": "uint32",
+              "name": "address_n",
+              "id": 1
+            },
+            {
+              "rule": "optional",
+              "options": {},
+              "type": "bool",
+              "name": "show_display",
+              "id": 2
+            }
+          ],
+          "enums": [],
+          "messages": [],
+          "options": {},
+          "oneofs": {}
+        },
+        {
+          "name": "OntologyAddress",
+          "fields": [
+            {
+              "rule": "optional",
+              "options": {},
+              "type": "string",
+              "name": "address",
+              "id": 1
+            }
+          ],
+          "enums": [],
+          "messages": [],
+          "options": {},
+          "oneofs": {}
+        },
+        {
+          "name": "OntologySignTx",
+          "fields": [
+            {
+              "rule": "repeated",
+              "options": {},
+              "type": "uint32",
+              "name": "address_n",
+              "id": 1
+            },
+            {
+              "rule": "optional",
+              "options": {},
+              "type": "OntologyTransaction",
+              "name": "transaction",
+              "id": 2
+            }
+          ],
+          "enums": [],
+          "messages": [
+            {
+              "name": "OntologyTransaction",
+              "fields": [
+                {
+                  "rule": "required",
+                  "options": {},
+                  "type": "uint32",
+                  "name": "version",
+                  "id": 1
+                },
+                {
+                  "rule": "required",
+                  "options": {},
+                  "type": "OntologyTxType",
+                  "name": "type",
+                  "id": 2
+                },
+                {
+                  "rule": "required",
+                  "options": {},
+                  "type": "uint32",
+                  "name": "nonce",
+                  "id": 3
+                },
+                {
+                  "rule": "required",
+                  "options": {},
+                  "type": "uint64",
+                  "name": "gasPrice",
+                  "id": 4
+                },
+                {
+                  "rule": "required",
+                  "options": {},
+                  "type": "uint64",
+                  "name": "gasLimit",
+                  "id": 5
+                },
+                {
+                  "rule": "required",
+                  "options": {},
+                  "type": "string",
+                  "name": "payer",
+                  "id": 6
+                },
+                {
+                  "rule": "required",
+                  "options": {},
+                  "type": "OntologyPayload",
+                  "name": "payload",
+                  "id": 7
+                },
+                {
+                  "rule": "repeated",
+                  "options": {},
+                  "type": "OntologyTxAttribute",
+                  "name": "txAttributes",
+                  "id": 8
+                },
+                {
+                  "rule": "optional",
+                  "options": {},
+                  "type": "OntologyTransferInfo",
+                  "name": "transferInfo",
+                  "id": 9
+                }
+              ],
+              "enums": [
+                {
+                  "name": "OntologyTxType",
+                  "values": [
+                    {
+                      "name": "BookKeeper",
+                      "id": 2
+                    },
+                    {
+                      "name": "Claim",
+                      "id": 3
+                    },
+                    {
+                      "name": "Deploy",
+                      "id": 208
+                    },
+                    {
+                      "name": "Invoke",
+                      "id": 209
+                    },
+                    {
+                      "name": "Enrollment",
+                      "id": 4
+                    },
+                    {
+                      "name": "Vote",
+                      "id": 5
+                    }
+                  ],
+                  "options": {}
+                }
+              ],
+              "messages": [
+                {
+                  "name": "OntologyPayload",
+                  "fields": [
+                    {
+                      "rule": "required",
+                      "options": {},
+                      "type": "OntologyPayloadType",
+                      "name": "type",
+                      "id": 1
+                    },
+                    {
+                      "rule": "optional",
+                      "options": {},
+                      "type": "bytes",
+                      "name": "code",
+                      "id": 2
+                    },
+                    {
+                      "rule": "optional",
+                      "options": {},
+                      "type": "bool",
+                      "name": "needStorage",
+                      "id": 3
+                    },
+                    {
+                      "rule": "optional",
+                      "options": {},
+                      "type": "string",
+                      "name": "name",
+                      "id": 4
+                    },
+                    {
+                      "rule": "optional",
+                      "options": {},
+                      "type": "string",
+                      "name": "version",
+                      "id": 5
+                    },
+                    {
+                      "rule": "optional",
+                      "options": {},
+                      "type": "string",
+                      "name": "author",
+                      "id": 6
+                    },
+                    {
+                      "rule": "optional",
+                      "options": {},
+                      "type": "string",
+                      "name": "email",
+                      "id": 7
+                    },
+                    {
+                      "rule": "optional",
+                      "options": {},
+                      "type": "string",
+                      "name": "description",
+                      "id": 8
+                    }
+                  ],
+                  "enums": [
+                    {
+                      "name": "OntologyPayloadType",
+                      "values": [
+                        {
+                          "name": "INVOKE",
+                          "id": 1
+                        },
+                        {
+                          "name": "DEPLOY",
+                          "id": 2
+                        }
+                      ],
+                      "options": {}
+                    }
+                  ],
+                  "messages": [],
+                  "options": {},
+                  "oneofs": {}
+                },
+                {
+                  "name": "OntologyTxAttribute",
+                  "fields": [
+                    {
+                      "rule": "required",
+                      "options": {},
+                      "type": "OntologyTxAttributeUsage",
+                      "name": "usage",
+                      "id": 1
+                    },
+                    {
+                      "rule": "optional",
+                      "options": {},
+                      "type": "bytes",
+                      "name": "data",
+                      "id": 3
+                    }
+                  ],
+                  "enums": [
+                    {
+                      "name": "OntologyTxAttributeUsage",
+                      "values": [
+                        {
+                          "name": "Nonce",
+                          "id": 0
+                        },
+                        {
+                          "name": "Script",
+                          "id": 32
+                        },
+                        {
+                          "name": "DescriptionUrl",
+                          "id": 129
+                        },
+                        {
+                          "name": "Description",
+                          "id": 144
+                        }
+                      ],
+                      "options": {}
+                    }
+                  ],
+                  "messages": [],
+                  "options": {},
+                  "oneofs": {}
+                },
+                {
+                  "name": "OntologyTransferInfo",
+                  "fields": [
+                    {
+                      "rule": "required",
+                      "options": {},
+                      "type": "OntologyAsset",
+                      "name": "asset",
+                      "id": 1
+                    },
+                    {
+                      "rule": "required",
+                      "options": {},
+                      "type": "uint64",
+                      "name": "amount",
+                      "id": 2
+                    },
+                    {
+                      "rule": "required",
+                      "options": {},
+                      "type": "string",
+                      "name": "fromAddress",
+                      "id": 3
+                    },
+                    {
+                      "rule": "required",
+                      "options": {},
+                      "type": "string",
+                      "name": "toAddress",
+                      "id": 4
+                    }
+                  ],
+                  "enums": [
+                    {
+                      "name": "OntologyAsset",
+                      "values": [
+                        {
+                          "name": "ONT",
+                          "id": 1
+                        },
+                        {
+                          "name": "ONG",
+                          "id": 2
+                        }
+                      ],
+                      "options": {}
+                    }
+                  ],
+                  "messages": [],
+                  "options": {},
+                  "oneofs": {}
+                }
+              ],
+              "options": {},
+              "oneofs": {}
+            }
+          ],
+          "options": {},
+          "oneofs": {}
+        },
+        {
+          "name": "OntologySignedTx",
+          "fields": [
+            {
+              "rule": "optional",
+              "options": {},
+              "type": "bytes",
+              "name": "signature",
+              "id": 1
+            }
+          ],
+          "enums": [],
+          "messages": [],
+          "options": {},
+          "oneofs": {}
+        }
+      ],
+      "enums": [
+        {
+          "name": "FailureType",
+          "values": [
+            {
+              "name": "Failure_UnexpectedMessage",
+              "id": 1
+            },
+            {
+              "name": "Failure_ButtonExpected",
+              "id": 2
+            },
+            {
+              "name": "Failure_DataError",
+              "id": 3
+            },
+            {
+              "name": "Failure_ActionCancelled",
+              "id": 4
+            },
+            {
+              "name": "Failure_PinExpected",
+              "id": 5
+            },
+            {
+              "name": "Failure_PinCancelled",
+              "id": 6
+            },
+            {
+              "name": "Failure_PinInvalid",
+              "id": 7
+            },
+            {
+              "name": "Failure_InvalidSignature",
+              "id": 8
+            },
+            {
+              "name": "Failure_ProcessError",
+              "id": 9
+            },
+            {
+              "name": "Failure_NotEnoughFunds",
+              "id": 10
+            },
+            {
+              "name": "Failure_NotInitialized",
+              "id": 11
+            },
+            {
+              "name": "Failure_PinMismatch",
+              "id": 12
+            },
+            {
+              "name": "Failure_FirmwareError",
+              "id": 99
+            }
+          ],
+          "options": {}
+        },
+        {
+          "name": "OutputScriptType",
+          "values": [
+            {
+              "name": "PAYTOADDRESS",
+              "id": 0
+            },
+            {
+              "name": "PAYTOSCRIPTHASH",
+              "id": 1
+            },
+            {
+              "name": "PAYTOMULTISIG",
+              "id": 2
+            },
+            {
+              "name": "PAYTOOPRETURN",
+              "id": 3
+            },
+            {
+              "name": "PAYTOWITNESS",
+              "id": 4
+            },
+            {
+              "name": "PAYTOP2SHWITNESS",
+              "id": 5
+            }
+          ],
+          "options": {}
+        },
+        {
+          "name": "InputScriptType",
+          "values": [
+            {
+              "name": "SPENDADDRESS",
+              "id": 0
+            },
+            {
+              "name": "SPENDMULTISIG",
+              "id": 1
+            },
+            {
+              "name": "EXTERNAL",
+              "id": 2
+            },
+            {
+              "name": "SPENDWITNESS",
+              "id": 3
+            },
+            {
+              "name": "SPENDP2SHWITNESS",
+              "id": 4
+            }
+          ],
+          "options": {}
+        },
+        {
+          "name": "RequestType",
+          "values": [
+            {
+              "name": "TXINPUT",
+              "id": 0
+            },
+            {
+              "name": "TXOUTPUT",
+              "id": 1
+            },
+            {
+              "name": "TXMETA",
+              "id": 2
+            },
+            {
+              "name": "TXFINISHED",
+              "id": 3
+            },
+            {
+              "name": "TXEXTRADATA",
+              "id": 4
+            }
+          ],
+          "options": {}
+        },
+        {
+          "name": "ButtonRequestType",
+          "values": [
+            {
+              "name": "ButtonRequest_Other",
+              "id": 1
+            },
+            {
+              "name": "ButtonRequest_FeeOverThreshold",
+              "id": 2
+            },
+            {
+              "name": "ButtonRequest_ConfirmOutput",
+              "id": 3
+            },
+            {
+              "name": "ButtonRequest_ResetDevice",
+              "id": 4
+            },
+            {
+              "name": "ButtonRequest_ConfirmWord",
+              "id": 5
+            },
+            {
+              "name": "ButtonRequest_WipeDevice",
+              "id": 6
+            },
+            {
+              "name": "ButtonRequest_ProtectCall",
+              "id": 7
+            },
+            {
+              "name": "ButtonRequest_SignTx",
+              "id": 8
+            },
+            {
+              "name": "ButtonRequest_FirmwareCheck",
+              "id": 9
+            },
+            {
+              "name": "ButtonRequest_Address",
+              "id": 10
+            },
+            {
+              "name": "ButtonRequest_PublicKey",
+              "id": 11
+            },
+            {
+              "name": "ButtonRequest_MnemonicWordCount",
+              "id": 12
+            },
+            {
+              "name": "ButtonRequest_MnemonicInput",
+              "id": 13
+            },
+            {
+              "name": "ButtonRequest_PassphraseType",
+              "id": 14
+            }
+          ],
+          "options": {}
+        },
+        {
+          "name": "PinMatrixRequestType",
+          "values": [
+            {
+              "name": "PinMatrixRequestType_Current",
+              "id": 1
+            },
+            {
+              "name": "PinMatrixRequestType_NewFirst",
+              "id": 2
+            },
+            {
+              "name": "PinMatrixRequestType_NewSecond",
+              "id": 3
+            }
+          ],
+          "options": {}
+        },
+        {
+          "name": "RecoveryDeviceType",
+          "values": [
+            {
+              "name": "RecoveryDeviceType_ScrambledWords",
+              "id": 0
+            },
+            {
+              "name": "RecoveryDeviceType_Matrix",
+              "id": 1
+            }
+          ],
+          "options": {}
+        },
+        {
+          "name": "WordRequestType",
+          "values": [
+            {
+              "name": "WordRequestType_Plain",
+              "id": 0
+            },
+            {
+              "name": "WordRequestType_Matrix9",
+              "id": 1
+            },
+            {
+              "name": "WordRequestType_Matrix6",
+              "id": 2
+            }
+          ],
+          "options": {}
+        },
+        {
+          "name": "PassphraseSourceType",
+          "values": [
+            {
+              "name": "ASK",
+              "id": 0
+            },
+            {
+              "name": "DEVICE",
+              "id": 1
+            },
+            {
+              "name": "HOST",
+              "id": 2
+            }
+          ],
+          "options": {}
+        },
+        {
+          "name": "NEMMosaicLevy",
+          "values": [
+            {
+              "name": "MosaicLevy_Absolute",
+              "id": 1
+            },
+            {
+              "name": "MosaicLevy_Percentile",
+              "id": 2
+            }
+          ],
+          "options": {}
+        },
+        {
+          "name": "NEMSupplyChangeType",
+          "values": [
+            {
+              "name": "SupplyChange_Increase",
+              "id": 1
+            },
+            {
+              "name": "SupplyChange_Decrease",
+              "id": 2
+            }
+          ],
+          "options": {}
+        },
+        {
+          "name": "NEMModificationType",
+          "values": [
+            {
+              "name": "CosignatoryModification_Add",
+              "id": 1
+            },
+            {
+              "name": "CosignatoryModification_Delete",
+              "id": 2
+            }
+          ],
+          "options": {}
+        },
+        {
+          "name": "NEMImportanceTransferMode",
+          "values": [
+            {
+              "name": "ImportanceTransfer_Activate",
+              "id": 1
+            },
+            {
+              "name": "ImportanceTransfer_Deactivate",
+              "id": 2
+            }
+          ],
+          "options": {}
+        },
+        {
+          "name": "LiskTransactionType",
+          "values": [
+            {
+              "name": "Transfer",
+              "id": 0
+            },
+            {
+              "name": "RegisterSecondPassphrase",
+              "id": 1
+            },
+            {
+              "name": "RegisterDelegate",
+              "id": 2
+            },
+            {
+              "name": "CastVotes",
+              "id": 3
+            },
+            {
+              "name": "RegisterMultisignatureAccount",
+              "id": 4
+            },
+            {
+              "name": "CreateDapp",
+              "id": 5
+            },
+            {
+              "name": "TransferIntoDapp",
+              "id": 6
+            },
+            {
+              "name": "TransferOutOfDapp",
+              "id": 7
+            }
+          ],
+          "options": {}
+        }
+      ]
+    }
+  ]
+}
